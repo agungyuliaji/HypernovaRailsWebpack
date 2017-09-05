@@ -7,7 +7,7 @@ const Main = () => (
   <div>
     <ul>
       <li><Link to="/">Ho!!!</Link></li>
-      <li><Link to="/about">About</Link></li>
+      <li><Link to="/home/about">About</Link></li>
       <li><Link to="/topics">Topics</Link></li>
     </ul>
 
@@ -16,7 +16,7 @@ const Main = () => (
     <hr/>
 
     <Route exact path="/" component={Home}/>
-    <Route path="/about" component={About}/>
+    <Route path="/home/about" component={About}/>
     <Route path="/topics" component={Topics}/>
   </div>
 )

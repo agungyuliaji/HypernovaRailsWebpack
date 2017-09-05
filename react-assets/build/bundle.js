@@ -27306,7 +27306,7 @@ var Main = function Main() {
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-          { to: '/about' },
+          { to: '/home/about' },
           'About'
         )
       ),
@@ -27323,7 +27323,7 @@ var Main = function Main() {
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ClickMe, { name: 'hello!' }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { exact: true, path: '/', component: Home }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/about', component: About }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/home/about', component: About }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/topics', component: Topics })
   );
 };
