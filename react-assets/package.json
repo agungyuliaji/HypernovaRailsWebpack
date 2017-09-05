@@ -9,9 +9,10 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "ssr:pack-web": "webpack --config webpack.web.config.js --w",
-    "ssr:pack-ssr": "webpack --config webpack.ssr.config.js --w",
-    "ssr:server": "node ./ssr/hypernova.jsx",
+    "ssr:pack-web": "webpack --config webpack/web.development.js --w",
+    "ssr:pack-ssr": "webpack --config webpack/ssr.development.js --w",
+    "ssr:server": "node app/config/ssr/hypernova.jsx",
+    "ssr:bunlde-host": "http-server build -p 8081",
     "run-dev": "npm-run-all --parallel ssr:*"
   },
   "devDependencies": {
@@ -19,8 +20,11 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "http-server": "^0.10.0",
     "hypernova": "^2.1.3",
     "hypernova-react": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "nodemon-webpack-plugin": "^0.1.2",
     "npm-run-all": "^4.1.1",
     "webpack": "^3.5.5",
     "webpack-node-externals": "^1.6.0"
